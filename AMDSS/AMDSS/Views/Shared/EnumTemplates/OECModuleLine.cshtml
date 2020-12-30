@@ -1,0 +1,18 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<OECModuleData>
+<link rel="stylesheet" href="~/css/site.css" />
+@{
+    <div class="list-body">
+        @foreach (var item in Model)
+        {
+        <div class="item-line">
+            <button>
+                @item.ModuleName
+            </button>
+        </div>
+        }
+    </div>
+    
+}

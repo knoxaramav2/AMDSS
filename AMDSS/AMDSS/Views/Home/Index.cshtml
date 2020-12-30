@@ -1,7 +1,14 @@
-﻿@{
-    ViewData["Title"] = "Home2";
+﻿@model IEnumerable<OECModuleData>
+
+@{
+    ViewData["Title"] = "Home";
 }
 
 <div>
-    
+    <div class="page-header">
+        <h2>OEC Modules</h2>
+    </div>
+    <div class="item-basic">
+        <partial name="~/Views/Shared/EnumTemplates/OECModuleLine.cshtml"/>
+    </div>
 </div>

@@ -20,7 +20,14 @@ namespace AMDSS.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var list = new List<OECModuleData>();
+
+            for(var i = 0; i < 5; ++i)
+            {
+                list.Add(new OECModuleData { ModuleName = $"ABC{i}" });
+            }
+
+            return View(list);
         }
 
         public IActionResult Privacy()
