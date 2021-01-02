@@ -6,6 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,6 +17,8 @@ namespace AMDSS
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            InitFileSystem();
         }
 
         public IConfiguration Configuration { get; }
@@ -58,6 +61,21 @@ namespace AMDSS
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+    
+        private void InitFileSystem()
+        {
+            const string rootDir = @"\\";
+
+            var paths = new string[] {
+                @"OEC\Modules",
+            };
+        
+            foreach(var path in paths)
+            {
+                var dir = Path.Combine(rootDir, path);
+                Directory.CreateDirectory(dir);
+            }
         }
     }
 }
