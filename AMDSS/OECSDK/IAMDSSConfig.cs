@@ -4,7 +4,7 @@ using System.Text;
 
 namespace OECSDK
 {
-    interface IAMDSSConfig
+    public interface IAMDSSConfig
     {
         void WriteDefaultRegistry();
         string InstallPath { get; }

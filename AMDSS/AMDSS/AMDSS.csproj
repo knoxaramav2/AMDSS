@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Helpers\" />
     <Folder Include="Views\Network\" />
     <Folder Include="Views\About\" />
     <Folder Include="Views\OEC\" />
@@ -18,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\OECSDK\OECSDK.csproj" />
+    <ProjectReference Include="..\Utility\Utility.csproj" />
   </ItemGroup>
 
 </Project>
