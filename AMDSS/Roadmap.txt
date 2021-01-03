@@ -1,0 +1,29 @@
+SDK Development:
+	GUI:
+		Web GUI:
+			JS Library:
+				Vector Graphics:
+				Static Graphics:
+				User Input:
+
+
+	API:
+		Desktop GUI:
+
+	Configuration:
+		Registry:
+
+		Environment:
+
+	Logs:
+		
+
+AMDSS Server:
+	Web API:
+		OEC:
+			LoadOECModule:
+
+			UploadOECModule:
+
+			DownloadOECModule:
+		

@@ -11,6 +11,22 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AMDSS_Setup", "AMDSS_Setup\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "Utility\Utility.csproj", "{8EA3F7D6-D607-440C-8528-7414AEFCAF1F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1AA25471-C4DB-4898-AFAD-A2223031353A}"
+	ProjectSection(SolutionItems) = preProject
+		..\docs\AMDSS_Diagram.drawio = ..\docs\AMDSS_Diagram.drawio
+		Roadmap.txt = Roadmap.txt
+		..\docs\Web API.xlsx = ..\docs\Web API.xlsx
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OECCommon", "OECCommon", "{CC6AB030-6C1B-4145-B40D-8EAD871FCB82}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DevelopmentApps", "DevelopmentApps", "{182D371C-6503-4310-87F8-A2FF376EDF24}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonApps", "CommonApps", "{1BA3039B-7FBD-4230-AAF5-362E99B6C33F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +50,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{182D371C-6503-4310-87F8-A2FF376EDF24} = {CC6AB030-6C1B-4145-B40D-8EAD871FCB82}
+		{1BA3039B-7FBD-4230-AAF5-362E99B6C33F} = {CC6AB030-6C1B-4145-B40D-8EAD871FCB82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BC82541D-EB5F-4C17-9BB6-05672E05B309}
